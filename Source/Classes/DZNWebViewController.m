@@ -368,6 +368,9 @@ static char DZNWebViewControllerKVOContext = 0;
     }
     
     NSString *url = self.webView.URL.absoluteString;
+
+    self.title = [self.webView.URL host];
+    return;
     
     UILabel *label = (UILabel *)self.navigationItem.titleView;
     
